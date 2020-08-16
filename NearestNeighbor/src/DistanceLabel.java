@@ -8,7 +8,7 @@ public class DistanceLabel implements Comparable<DistanceLabel> {
 	private double distance;
 	private String label;
 
-	public DistanceLabel(double dist, String l, int origIndex) {
+	public DistanceLabel(double dist, String l) {
 		this.distance = dist;
 		this.label = l;
 	}
@@ -33,7 +33,6 @@ public class DistanceLabel implements Comparable<DistanceLabel> {
 	@Override
 	public int compareTo(DistanceLabel otherResult) {
 		return Double.compare(this.distance, otherResult.getDistance());
-
 	}
 
 	// -----------------------------------------------------------------------------
@@ -41,6 +40,6 @@ public class DistanceLabel implements Comparable<DistanceLabel> {
 	// -----------------------------------------------------------------------------
 	@Override
 	public String toString() {
-		return "distance: " + this.distance + " label: " + this.label + " original index: ";
+		return "distance: " + this.distance + " label: " + this.label;
 	}
 }

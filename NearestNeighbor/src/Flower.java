@@ -6,16 +6,16 @@
 
 public class Flower {
 	// Attributes for Flower class objects
-	private double sepalLength;
-	private double sepalWidth;
-	private double petalLength;
-	private double petalWidth;
+	private float sepalLength;
+	private float sepalWidth;
+	private float petalLength;
+	private float petalWidth;
 	String label;
 
 	// -----------------------------------------------------------------------------
 	// Constructor for Flower objects
 	// -----------------------------------------------------------------------------
-	public Flower(double sl, double sw, double pl, double pw, String l) {
+	public Flower(float sl, float sw, float pl, float pw, String l) {
 		sepalLength = sl;
 		sepalWidth = sw;
 		petalLength = pl;
@@ -26,7 +26,6 @@ public class Flower {
 	// -----------------------------------------------------------------------------
 	// Returns distance between test Flower instance and training Flower instance
 	// -----------------------------------------------------------------------------
-
 	public static double distBetween(Flower test, Flower training) {
 		double deltaSL = Math.pow((test.sepalLength - training.sepalLength), 2.0);
 		double deltaSW = Math.pow((test.sepalWidth - training.sepalWidth), 2.0);
@@ -41,39 +40,34 @@ public class Flower {
 	// -----------------------------------------------------------------------------
 	// Returns the sepal length for an instance
 	// -----------------------------------------------------------------------------
-
-	public double getSL() {
+	public float getSL() {
 		return this.sepalLength;
 	}
 
 	// -----------------------------------------------------------------------------
 	// Returns the sepal width for an instance
 	// -----------------------------------------------------------------------------
-
-	public double getSW() {
+	public float getSW() {
 		return this.sepalWidth;
 	}
 
 	// -----------------------------------------------------------------------------
 	// Returns the petal length for an instance
 	// -----------------------------------------------------------------------------
-
-	public double getPL() {
+	public float getPL() {
 		return this.petalLength;
 	}
 
 	// -----------------------------------------------------------------------------
 	// Returns the petal width for an instance
 	// -----------------------------------------------------------------------------
-
-	public double getPW() {
+	public float getPW() {
 		return this.petalWidth;
 	}
 
 	// -----------------------------------------------------------------------------
 	// Returns the label for an instance
 	// -----------------------------------------------------------------------------
-
 	public String getLabel() {
 		return this.label;
 	}
