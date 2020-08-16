@@ -28,14 +28,46 @@ public class Flower {
 	// -----------------------------------------------------------------------------
 
 	public static double distBetween(Flower test, Flower training) {
-		double deltaSL = Math.pow(test.sepalLength - training.sepalLength, 2.0);
-		double deltaSW = Math.pow(test.sepalWidth - training.sepalWidth, 2.0);
-		double deltaPL = Math.pow(test.petalLength - training.petalLength, 2.0);
-		double deltaPW = Math.pow(test.petalWidth - training.petalWidth, 2.0);
+		double deltaSL = Math.pow((test.sepalLength - training.sepalLength), 2.0);
+		double deltaSW = Math.pow((test.sepalWidth - training.sepalWidth), 2.0);
+		double deltaPL = Math.pow((test.petalLength - training.petalLength), 2.0);
+		double deltaPW = Math.pow((test.petalWidth - training.petalWidth), 2.0);
 
 		double dist = Math.sqrt(deltaSL + deltaSW + deltaPL + deltaPW);
 
 		return dist;
+	}
+
+	// -----------------------------------------------------------------------------
+	// Returns the sepal length for an instance
+	// -----------------------------------------------------------------------------
+
+	public float getSL() {
+		return this.sepalLength;
+	}
+
+	// -----------------------------------------------------------------------------
+	// Returns the sepal width for an instance
+	// -----------------------------------------------------------------------------
+
+	public float getSW() {
+		return this.sepalWidth;
+	}
+
+	// -----------------------------------------------------------------------------
+	// Returns the petal length for an instance
+	// -----------------------------------------------------------------------------
+
+	public float getPL() {
+		return this.petalLength;
+	}
+
+	// -----------------------------------------------------------------------------
+	// Returns the petal width for an instance
+	// -----------------------------------------------------------------------------
+
+	public float getPW() {
+		return this.petalWidth;
 	}
 
 	// -----------------------------------------------------------------------------
@@ -55,4 +87,5 @@ public class Flower {
 		return " sl: " + this.sepalLength + " sw: " + this.sepalWidth + " pl: " + this.petalLength + " pw: "
 				+ this.petalWidth + " label: " + label;
 	}
+
 }
