@@ -6,16 +6,16 @@
 
 public class Flower {
 	// Attributes for Flower class objects
-	private float sepalLength;
-	private float sepalWidth;
-	private float petalLength;
-	private float petalWidth;
+	private double sepalLength;
+	private double sepalWidth;
+	private double petalLength;
+	private double petalWidth;
 	String label;
 
 	// -----------------------------------------------------------------------------
 	// Constructor for Flower objects
 	// -----------------------------------------------------------------------------
-	public Flower(float sl, float sw, float pl, float pw, String l) {
+	public Flower(double sl, double sw, double pl, double pw, String l) {
 		sepalLength = sl;
 		sepalWidth = sw;
 		petalLength = pl;
@@ -42,7 +42,7 @@ public class Flower {
 	// Returns the sepal length for an instance
 	// -----------------------------------------------------------------------------
 
-	public float getSL() {
+	public double getSL() {
 		return this.sepalLength;
 	}
 
@@ -50,7 +50,7 @@ public class Flower {
 	// Returns the sepal width for an instance
 	// -----------------------------------------------------------------------------
 
-	public float getSW() {
+	public double getSW() {
 		return this.sepalWidth;
 	}
 
@@ -58,7 +58,7 @@ public class Flower {
 	// Returns the petal length for an instance
 	// -----------------------------------------------------------------------------
 
-	public float getPL() {
+	public double getPL() {
 		return this.petalLength;
 	}
 
@@ -66,7 +66,7 @@ public class Flower {
 	// Returns the petal width for an instance
 	// -----------------------------------------------------------------------------
 
-	public float getPW() {
+	public double getPW() {
 		return this.petalWidth;
 	}
 
